@@ -1,0 +1,62 @@
+version: 2
+
+# Raw
+
+sources:
+  - name: moodle_training
+    description: Techtracks data source, extracted with airbyte.
+    tables:
+      - name: mdl_user
+        description: table with details about users
+      - name: mdl_user_enrolments
+        description: table with enrollment information
+      - name: mdl_user_lastaccess
+        description: table with acess information
+      - name: mdl_stats_user_daily
+        description: table with details about daily access of users
+      - name: mdl_stats_daily
+        description: table with course acess information
+      - name: mdl_cohort
+        description: table with course tracks information
+      - name: mdl_cohort_members
+        description: table with information about members and tracks
+      - name: mdl_competency
+        description: table with information about course and competencies related to it
+      - name: mdl_competency_usercomp
+        description: table with information about course completion and their competency
+      - name: mdl_competency_usercompcourse
+        description: table with information about course completion and their competency
+      - name: mdl_badge
+        description: not used
+      - name: mdl_grade_grades
+        description: not used
+      - name: mdl_grade_items
+        description: not used
+      - name: mdl_quiz
+        description: not used
+      - name: mdl_quiz_attempts
+        description: not used
+      - name: mdl_quiz_grades
+        description: not used
+      - name: mdl_quiz_slots
+        description: not used
+      - name: mdl_question
+        description: not used
+      - name: mdl_question_attempts
+        description: not used
+      - name: mdl_question_attempt_steps
+        description: not used
+      - name: mdl_question_attempt_step_data
+        description: not used
+      - name: mdl_enrol
+        description: not used
+      - name: mdl_course_categories
+        description: table with information about the category of each course
+      - name: mdl_course
+        description: table with information about course name and category
+      - name: mdl_courser_completions
+        description: table with information about course, user and time enrolled and completed
+      - name: mdl_course_completion_crit_compl
+        description: table with information about course completion and grades
+      
+      
