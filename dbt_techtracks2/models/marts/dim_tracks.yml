@@ -1,0 +1,30 @@
+version: 2
+
+models:
+  - name: dim_tracks
+    description: contains information about the tracks
+    columns:  
+      - name: id
+        description: id of the track
+        tests:
+          - not_null
+
+      - name: fullname
+        description: full name of the user
+        tests:
+          - not_null
+
+      - name: track
+        description: name of the track
+        tests:
+          - not_null
+
+      - name: userid
+        description: id of the user
+        tests:
+          - not_null
+        
+      - name: cohortid
+        description: id of the cohort
+        tests:
+          - not_null

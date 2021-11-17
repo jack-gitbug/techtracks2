@@ -1,0 +1,41 @@
+version: 2
+
+models:
+  - name: dim_users
+    description: contains information about the users
+    columns:  
+      - name: id
+        description: id of the user
+        tests:
+          - not_null
+          - unique
+
+      - name: username
+        description: username of the user
+        tests:
+          - not_null
+
+      - name: fullname
+        description: name of the users
+        tests:
+          - not_null
+
+      - name: email
+        description: email of the user
+        tests:
+          - not_null
+
+      - name: first_access
+        description: first access of the user
+        tests:
+          - not_null
+
+      - name: last_access
+        description: last access of the user
+        tests:
+          - not_null
+
+      - name: last_login
+        description: last login of the user
+        tests:
+          - not_null

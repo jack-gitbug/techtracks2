@@ -1,4 +1,5 @@
- {{ config(materialized='table') }}
+ /* executed by dbt */
+  {{ config(materialized='table') }}
 
 with
     source as (

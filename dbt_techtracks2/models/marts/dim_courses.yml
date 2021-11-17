@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: dim_courses
+    description: contains information about the courses 
+    columns:  
+      - name: courseid
+        description: id of the course
+        tests:
+          - not_null
+          - unique
+
+      - name: category
+        description: category of the course
+        tests:
+          - not_null
+
+      - name: course_name
+        description: name of the course
+        tests:
+          - not_null

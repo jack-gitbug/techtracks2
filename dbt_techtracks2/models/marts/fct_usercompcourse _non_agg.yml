@@ -1,0 +1,31 @@
+version: 2
+
+models:
+  - name: fct_usercompcourse _non_agg
+    columns:
+      - name: comp_id
+        description: interaction surrogate key
+        tests:
+          - not_null
+
+      - name: userid
+        description: id of the user
+        tests:
+          - not_null
+
+      - name: courseid
+        description: id of the course
+        tests:
+          - not_null
+
+      - name: proficiency
+        description: status of the course, completed or incompleted 
+
+      - name: competencyid
+        description: id of the competency
+
+      - name: time_created
+        description: date the status of competency was created
+
+      - name: time_modified
+        description: date the status of competency was modified

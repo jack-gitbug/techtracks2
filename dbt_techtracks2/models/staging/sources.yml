@@ -54,7 +54,7 @@ sources:
         description: table with information about the category of each course
       - name: mdl_course
         description: table with information about course name and category
-      - name: mdl_courser_completions
+      - name: mdl_course_completions
         description: table with information about course, user and time enrolled and completed
       - name: mdl_course_completion_crit_compl
         description: table with information about course completion and grades
